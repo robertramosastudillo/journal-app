@@ -18,7 +18,7 @@ export const NoteScreen = () => {
             className="notes__textarea"
           ></textarea>
 
-          <div class="notes__image">
+          <div className="notes__image">
             <img
               src="https://img.freepik.com/foto-gratis/colorido-cielo-dramatico-nubes-al-atardecer_37874-1733.jpg?size=626&ext=jpg"
               alt="imagen"
