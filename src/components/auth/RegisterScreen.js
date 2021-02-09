@@ -7,10 +7,8 @@ import { removeError, setError } from "../../actions/ui";
 import { startRegisterWithEmailPasswordName } from "../../actions/auth";
 
 export const RegisterScreen = () => {
-
   const dispatch = useDispatch();
-  const {msgError} = useSelector(state => state.ui);
-
+  const { msgError } = useSelector((state) => state.ui);
 
   const [formValues, handleInputChange] = useForm({
     name: "Robert",
@@ -51,7 +49,10 @@ export const RegisterScreen = () => {
   return (
     <>
       <h3 className="auth__title">Register</h3>
-      <form onSubmit={handleRegister}>
+      <form
+        onSubmit={handleRegister}
+        className="animate__animated animate__fadeIn animate__faster"
+      >
         {msgError && <div className="auth__alert-error">{msgError}</div>}
 
         <input
